@@ -95,7 +95,6 @@
                                 document.getElementById("msg").innerHTML = `Your string reversed is: ${revString}`;
                                 //show the alert box
                                 document.getElementById("alert").classList.remove("invisible");
-
                             }
                         </code>
                     </pre>
@@ -103,13 +102,21 @@
                 <div class="col-lg-4">
                     <p>The Code Is Structured In Three Separate Functions</p>
                     <h5>getValue</h5>
-                    <p>getValue is a function that serves as the controller function, which gets the user input from the page.</p>
+                    <p> getValue is a function that serves as the controller function, which gets the user input from the page.
+                        This is done by getting the userValue from the HTML page using DOM Manipulation to get its va;ue.
+                        After this, revString is declared by calling function reverseString with the userValue as its parameter.
+                        Then, displayString is called with revString being its parameter.
+                    </p>
                     <h5>reverseString</h5>
-                    <p>reverseString serves as the logic function. Its job is to reverse the user's string input - which is achieved by using a For Loop. In this For Loop, we have to set it up so that it starts from the last index in the array to the first. 
-                        After the loop is finished, we then ask the program to return those values.
+                    <p> reverseString serves as the logic function. We start by declaring revString as an array. Then, to initiate the string reversal, a For Loop is used. 
+                        In this For Loop, we have to set it up so that it starts from the last index in the array to the first. 
+                        After the loop is finished and all the string values have been reversed, we then ask the program to return those values.
                     </p>
                     <h5>displayString</h5>
-                    <p>displayString serves as the display function. It has to display the values from revString to user.</p>
+                    <p> displayString serves as the display function. It has to display the values from revString to user.
+                        The reversed string can be written to the HTML page using a template literal. 
+                        Then, the alert message added in getValue must be added using DOM and removing its class (invisible).
+                    </p>
                 </div>
             </div>
         </div>
